@@ -1,3 +1,27 @@
-PODFILE CHECKSUM: a64ec7d969175e716e9021e1c7ec45ba53b3d952
+PODS:
+  - Alamofire (4.0.1)
+  - Kingfisher (3.2.0)
+  - Nimble (5.1.1)
+  - Quick (0.10.0)
+  - SVProgressHUD (2.0.3)
+  - Unbox (2.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Kingfisher (~> 3.0)
+  - Nimble
+  - Quick
+  - SVProgressHUD
+  - Unbox
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Kingfisher: 50407d1d5dbc34965009d425a286342ff36a84ea
+  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  Unbox: 03d7128ce429987986bc08d967e9d5e0da158946
+
+PODFILE CHECKSUM: 303c2148bf0ea2bf110316bc7c6c935058b42826
 
 COCOAPODS: 1.1.1
