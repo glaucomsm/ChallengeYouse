@@ -13,9 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    //MARK: - Application State
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        appearance()
         return true
     }
 
@@ -42,5 +45,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension AppDelegate {
+    internal func appearance() {
+        // Change navigation bar appearance
+        UINavigationBar.appearance().barTintColor = UIColor(red: 250.0/255.0, green: 174.0/255.0, blue: 49.0/255.0, alpha: 1.0)
+        
+        UINavigationBar.appearance().tintColor = UIColor.white
+        
+        if let barFont = UIFont(name: "AvenirNextCondensed-DemiBold", size: 22.0) {
+            UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white, NSFontAttributeName:barFont]
+        }
+        
+        // Change status bar style
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
 }
 
