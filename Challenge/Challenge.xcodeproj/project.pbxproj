@@ -16,6 +16,7 @@
 		2AFA80611DDD132200701A78 /* GoogleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA80601DDD132200701A78 /* GoogleAPI.swift */; };
 		2AFA80641DDD169000701A78 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA80631DDD169000701A78 /* CustomImageView.swift */; };
 		2AFA80691DDD236B00701A78 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA80681DDD236B00701A78 /* Places.swift */; };
+		2AFA806B1DDD2D4C00701A78 /* OpeningHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA806A1DDD2D4C00701A78 /* OpeningHours.swift */; };
 		6BADE8051B74EBE988D0346C /* Pods_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE83A8D9E49F9F75B8BEADCF /* Pods_Challenge.framework */; };
 		B03FA1171F7B5D644F7DB41D /* Pods_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D923311D600CEFCF031C2D39 /* Pods_ChallengeUITests.framework */; };
 		F6C94D7A2816F8E5D448D34E /* Pods_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C50A6A9F2F2232DF65DD0E6 /* Pods_ChallengeTests.framework */; };
@@ -55,6 +56,7 @@
 		2AFA80601DDD132200701A78 /* GoogleAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleAPI.swift; path = Manager/GoogleAPI.swift; sourceTree = "<group>"; };
 		2AFA80631DDD169000701A78 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomImageView.swift; path = Custom/CustomImageView.swift; sourceTree = "<group>"; };
 		2AFA80681DDD236B00701A78 /* Places.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Places.swift; path = Models/Places.swift; sourceTree = "<group>"; };
+		2AFA806A1DDD2D4C00701A78 /* OpeningHours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpeningHours.swift; path = Models/OpeningHours.swift; sourceTree = "<group>"; };
 		5ABF520B88A1DA2027AC1707 /* Pods-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge/Pods-Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		5C50A6A9F2F2232DF65DD0E6 /* Pods_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C5918600CC745FE04C5CCB /* Pods-ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChallengeTests/Pods-ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				2AFA80681DDD236B00701A78 /* Places.swift */,
+				2AFA806A1DDD2D4C00701A78 /* OpeningHours.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				2AFA802D1DDD085400701A78 /* AppDelegate.swift in Sources */,
 				2AFA80641DDD169000701A78 /* CustomImageView.swift in Sources */,
 				2AFA80611DDD132200701A78 /* GoogleAPI.swift in Sources */,
+				2AFA806B1DDD2D4C00701A78 /* OpeningHours.swift in Sources */,
 				2AFA80691DDD236B00701A78 /* Places.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

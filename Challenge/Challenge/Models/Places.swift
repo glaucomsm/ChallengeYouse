@@ -7,3 +7,25 @@
 //
 
 import Foundation
+import Unbox
+
+class Places: Unboxable {
+    
+    // MARK: - Attributes
+    
+    var name: String?
+    var openingHours: OpeningHours?
+    var icon: String?
+    var vincinity: String?
+    
+    //MARK: - Initialize
+    
+    required init(unboxer: Unboxer)
+    {
+        self.name = unboxer.unbox(key: "name")
+        self.openingHours = unboxer.unbox(key: "opening_hours")
+        self.icon = unboxer.unbox(key: "icon")
+        self.vincinity = unboxer.unbox(key: "vicinity")
+    }
+    
+}
