@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A6518751DDE785400858BE1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6518741DDE785400858BE1 /* CoreLocation.framework */; };
+		2AB1D8E11DDE614A00FF5FE7 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1D8E01DDE614A00FF5FE7 /* NetworkUtils.swift */; };
+		2AB1D8E31DDE622000FF5FE7 /* PlacesUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1D8E21DDE622000FF5FE7 /* PlacesUtils.swift */; };
+		2AB1D8E71DDE631300FF5FE7 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1D8E61DDE631300FF5FE7 /* PlacesTableViewController.swift */; };
+		2AB1D8EA1DDE63E400FF5FE7 /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1D8E91DDE63E400FF5FE7 /* PlacesTableViewCell.swift */; };
 		2AFA802D1DDD085400701A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA802C1DDD085400701A78 /* AppDelegate.swift */; };
 		2AFA80341DDD085400701A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AFA80331DDD085400701A78 /* Assets.xcassets */; };
 		2AFA80421DDD085400701A78 /* ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA80411DDD085400701A78 /* ChallengeTests.swift */; };
@@ -43,6 +48,11 @@
 
 /* Begin PBXFileReference section */
 		1E10939F65D7F0A5A897EA60 /* Pods-ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChallengeUITests/Pods-ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2A6518741DDE785400858BE1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2AB1D8E01DDE614A00FF5FE7 /* NetworkUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkUtils.swift; path = Utils/NetworkUtils.swift; sourceTree = "<group>"; };
+		2AB1D8E21DDE622000FF5FE7 /* PlacesUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesUtils.swift; path = Utils/PlacesUtils.swift; sourceTree = "<group>"; };
+		2AB1D8E61DDE631300FF5FE7 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesTableViewController.swift; path = Views/Main/PlacesTableViewController.swift; sourceTree = "<group>"; };
+		2AB1D8E91DDE63E400FF5FE7 /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesTableViewCell.swift; path = Cells/PlacesTableViewCell.swift; sourceTree = "<group>"; };
 		2AFA80291DDD085400701A78 /* Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AFA802C1DDD085400701A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AFA80331DDD085400701A78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A6518751DDE785400858BE1 /* CoreLocation.framework in Frameworks */,
 				6BADE8051B74EBE988D0346C /* Pods_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +110,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AB1D8DF1DDE610300FF5FE7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2AB1D8E01DDE614A00FF5FE7 /* NetworkUtils.swift */,
+				2AB1D8E21DDE622000FF5FE7 /* PlacesUtils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		2AB1D8E41DDE62B600FF5FE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2AB1D8E51DDE62CF00FF5FE7 /* Main */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2AB1D8E51DDE62CF00FF5FE7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2AB1D8E61DDE631300FF5FE7 /* PlacesTableViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		2AB1D8E81DDE63A100FF5FE7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2AB1D8E91DDE63E400FF5FE7 /* PlacesTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		2AFA80201DDD085400701A78 = {
 			isa = PBXGroup;
 			children = (
@@ -127,9 +171,12 @@
 				2AFA802C1DDD085400701A78 /* AppDelegate.swift */,
 				2AFA80331DDD085400701A78 /* Assets.xcassets */,
 				2AFA80381DDD085400701A78 /* Info.plist */,
+				2AB1D8DF1DDE610300FF5FE7 /* Utils */,
 				2AFA80621DDD163700701A78 /* Custom */,
 				2AFA805A1DDD11DC00701A78 /* Manager */,
 				2AFA80651DDD232600701A78 /* Models */,
+				2AB1D8E41DDE62B600FF5FE7 /* Views */,
+				2AB1D8E81DDE63A100FF5FE7 /* Cells */,
 				2AFA805B1DDD11ED00701A78 /* Storyboards */,
 			);
 			path = Challenge;
@@ -192,6 +239,7 @@
 		44983D2C8068680AB06435CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A6518741DDE785400858BE1 /* CoreLocation.framework */,
 				FE83A8D9E49F9F75B8BEADCF /* Pods_Challenge.framework */,
 				5C50A6A9F2F2232DF65DD0E6 /* Pods_ChallengeTests.framework */,
 				D923311D600CEFCF031C2D39 /* Pods_ChallengeUITests.framework */,
@@ -493,13 +541,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AB1D8E11DDE614A00FF5FE7 /* NetworkUtils.swift in Sources */,
 				2AFA802D1DDD085400701A78 /* AppDelegate.swift in Sources */,
 				2AFA80641DDD169000701A78 /* CustomImageView.swift in Sources */,
 				2AFA806D1DDDB73A00701A78 /* APIController.swift in Sources */,
 				2AFA80611DDD132200701A78 /* GoogleAPI.swift in Sources */,
 				2AFA806F1DDDBC6800701A78 /* PlacesConverter.swift in Sources */,
 				2AFA806B1DDD2D4C00701A78 /* OpeningHours.swift in Sources */,
+				2AB1D8E31DDE622000FF5FE7 /* PlacesUtils.swift in Sources */,
 				2AFA80691DDD236B00701A78 /* Places.swift in Sources */,
+				2AB1D8EA1DDE63E400FF5FE7 /* PlacesTableViewCell.swift in Sources */,
+				2AB1D8E71DDE631300FF5FE7 /* PlacesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

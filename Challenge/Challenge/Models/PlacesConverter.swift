@@ -17,6 +17,7 @@ class PlacesConverter {
         
         let placesArray: NSMutableArray? = NSMutableArray()
         let jsonResults: NSArray
+        
         jsonResults = json["results"] as! NSArray
         
         for jsonPlaces in jsonResults
