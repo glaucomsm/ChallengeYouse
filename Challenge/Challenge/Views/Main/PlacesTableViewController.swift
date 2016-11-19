@@ -94,7 +94,7 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
         
         if let place = self.placesArray?[indexPath.row] as? Places {
             cell.placesNames.text = place.name
-            cell.placesVicinity.text = place.vincinity
+            cell.placesVicinity.text = place.vicinity
             let imageURL = URL(string: (place.icon)!)
             cell.placesImage.kf.setImage(with: imageURL)
         }

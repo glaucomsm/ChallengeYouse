@@ -16,7 +16,7 @@ class Places: Unboxable {
     var name: String?
     var openingHours: OpeningHours?
     var icon: String?
-    var vincinity: String?
+    var vicinity: String?
     
     //MARK: - Initialize
     
@@ -24,7 +24,7 @@ class Places: Unboxable {
         self.name = unboxer.unbox(key: "name")
         self.openingHours = unboxer.unbox(key: "opening_hours")
         self.icon = unboxer.unbox(key: "icon")
-        self.vincinity = unboxer.unbox(key: "vicinity")
+        self.vicinity = unboxer.unbox(key: "vicinity")
     }
     
 }

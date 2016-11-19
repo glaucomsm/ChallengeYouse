@@ -44,9 +44,8 @@ class PlacesDetailViewController: UIViewController {
     func loadPlaces() {
         
         self.placesName.text = places?.name
-        self.placesVicinity.text = places?.vincinity
+        self.placesVicinity.text = places?.vicinity
         let imageURL = URL(string: (places?.icon)!)
         self.placesImage.kf.setImage(with: imageURL)
     }
-
 }
