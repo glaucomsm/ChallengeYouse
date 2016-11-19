@@ -54,7 +54,7 @@ extension AppDelegate {
         
         UINavigationBar.appearance().tintColor = UIColor.white
         
-        if let barFont = UIFont(name: "AvenirNextCondensed-DemiBold", size: 22.0) {
+        if let barFont = UIFont(name: "AvenirNextCondensed-DemiBold", size: 15.0) {
             UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white, NSFontAttributeName:barFont]
         }
         

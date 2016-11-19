@@ -16,7 +16,7 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
     //MARK: - Attributes
     
     var placesArray: NSMutableArray?
-    let locationManager = CLLocationManager()
+    let manager = CLLocationManager()
     
     //MARK: - View lifecycle
 
@@ -26,6 +26,9 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
         self.placesArray = NSMutableArray()
         self.getLocation()
         self.title = "Places"
+        
+        // Empty back button title
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         self.refreshControl = UIRefreshControl()
         self.refreshControl?.addTarget(self, action: #selector(PlacesTableViewController.reloadPlaces), for: UIControlEvents.valueChanged)
@@ -49,13 +52,12 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
     }
     
     func getLocation() {
-        self.locationManager.requestAlwaysAuthorization()
-        self.locationManager.requestWhenInUseAuthorization()
+        self.manager.requestAlwaysAuthorization()
         if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
+            manager.delegate = self
             SVProgressHUD.show(withStatus: "Loading Places")
-            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-            locationManager.startUpdatingLocation()
+            manager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            manager.startUpdatingLocation()
         }
     }
     
@@ -100,5 +102,13 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
     }
     
     //MARK: - UITableViewDelegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "PlacesDetailViewController") as! PlacesDetailViewController
+        vc.places = self.placesArray?[indexPath.row] as? Places
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
 }

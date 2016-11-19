@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		2A6518751DDE785400858BE1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6518741DDE785400858BE1 /* CoreLocation.framework */; };
 		2AB1D8E11DDE614A00FF5FE7 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1D8E01DDE614A00FF5FE7 /* NetworkUtils.swift */; };
-		2AB1D8E31DDE622000FF5FE7 /* PlacesUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1D8E21DDE622000FF5FE7 /* PlacesUtils.swift */; };
 		2AB1D8E71DDE631300FF5FE7 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1D8E61DDE631300FF5FE7 /* PlacesTableViewController.swift */; };
 		2AB1D8EA1DDE63E400FF5FE7 /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1D8E91DDE63E400FF5FE7 /* PlacesTableViewCell.swift */; };
+		2AD9605D1DDFBC5500B4A96C /* PlacesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9605C1DDFBC5500B4A96C /* PlacesDetailViewController.swift */; };
+		2AE52F5A1DE075430058A5DA /* place.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AE52F591DE075430058A5DA /* place.json */; };
 		2AFA802D1DDD085400701A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA802C1DDD085400701A78 /* AppDelegate.swift */; };
 		2AFA80341DDD085400701A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AFA80331DDD085400701A78 /* Assets.xcassets */; };
 		2AFA80421DDD085400701A78 /* ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA80411DDD085400701A78 /* ChallengeTests.swift */; };
@@ -50,9 +51,10 @@
 		1E10939F65D7F0A5A897EA60 /* Pods-ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChallengeUITests/Pods-ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2A6518741DDE785400858BE1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2AB1D8E01DDE614A00FF5FE7 /* NetworkUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkUtils.swift; path = Utils/NetworkUtils.swift; sourceTree = "<group>"; };
-		2AB1D8E21DDE622000FF5FE7 /* PlacesUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesUtils.swift; path = Utils/PlacesUtils.swift; sourceTree = "<group>"; };
 		2AB1D8E61DDE631300FF5FE7 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesTableViewController.swift; path = Views/Main/PlacesTableViewController.swift; sourceTree = "<group>"; };
 		2AB1D8E91DDE63E400FF5FE7 /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesTableViewCell.swift; path = Cells/PlacesTableViewCell.swift; sourceTree = "<group>"; };
+		2AD9605C1DDFBC5500B4A96C /* PlacesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesDetailViewController.swift; path = Views/Main/PlacesDetailViewController.swift; sourceTree = "<group>"; };
+		2AE52F591DE075430058A5DA /* place.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = place.json; sourceTree = "<group>"; };
 		2AFA80291DDD085400701A78 /* Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AFA802C1DDD085400701A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AFA80331DDD085400701A78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				2AB1D8E01DDE614A00FF5FE7 /* NetworkUtils.swift */,
-				2AB1D8E21DDE622000FF5FE7 /* PlacesUtils.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -131,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				2AB1D8E61DDE631300FF5FE7 /* PlacesTableViewController.swift */,
+				2AD9605C1DDFBC5500B4A96C /* PlacesDetailViewController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -171,6 +173,7 @@
 				2AFA802C1DDD085400701A78 /* AppDelegate.swift */,
 				2AFA80331DDD085400701A78 /* Assets.xcassets */,
 				2AFA80381DDD085400701A78 /* Info.plist */,
+				2AE52F591DE075430058A5DA /* place.json */,
 				2AB1D8DF1DDE610300FF5FE7 /* Utils */,
 				2AFA80621DDD163700701A78 /* Custom */,
 				2AFA805A1DDD11DC00701A78 /* Manager */,
@@ -379,6 +382,7 @@
 				2AFA805F1DDD124C00701A78 /* LaunchScreen.storyboard in Resources */,
 				2AFA80341DDD085400701A78 /* Assets.xcassets in Resources */,
 				2AFA805D1DDD122F00701A78 /* Main.storyboard in Resources */,
+				2AE52F5A1DE075430058A5DA /* place.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,8 +551,8 @@
 				2AFA806D1DDDB73A00701A78 /* APIController.swift in Sources */,
 				2AFA80611DDD132200701A78 /* GoogleAPI.swift in Sources */,
 				2AFA806F1DDDBC6800701A78 /* PlacesConverter.swift in Sources */,
+				2AD9605D1DDFBC5500B4A96C /* PlacesDetailViewController.swift in Sources */,
 				2AFA806B1DDD2D4C00701A78 /* OpeningHours.swift in Sources */,
-				2AB1D8E31DDE622000FF5FE7 /* PlacesUtils.swift in Sources */,
 				2AFA80691DDD236B00701A78 /* Places.swift in Sources */,
 				2AB1D8EA1DDE63E400FF5FE7 /* PlacesTableViewCell.swift in Sources */,
 				2AB1D8E71DDE631300FF5FE7 /* PlacesTableViewController.swift in Sources */,
@@ -605,6 +609,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -654,6 +659,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -682,6 +688,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F1A554F3C92900B4E2AB4B87 /* Pods-Challenge.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Challenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -695,6 +702,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5ABF520B88A1DA2027AC1707 /* Pods-Challenge.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Challenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

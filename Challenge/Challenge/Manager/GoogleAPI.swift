@@ -8,7 +8,7 @@
 
 import Foundation
 
-class GoogleAPI {
+struct GoogleAPI {
     
     static let baseURLString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     static let apiKey = "AIzaSyAKd1IlCzCkI85rtPu-r4onhHbozsV0DNE"

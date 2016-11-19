@@ -20,8 +20,7 @@ class Places: Unboxable {
     
     //MARK: - Initialize
     
-    required init(unboxer: Unboxer)
-    {
+    required init(unboxer: Unboxer) {
         self.name = unboxer.unbox(key: "name")
         self.openingHours = unboxer.unbox(key: "opening_hours")
         self.icon = unboxer.unbox(key: "icon")

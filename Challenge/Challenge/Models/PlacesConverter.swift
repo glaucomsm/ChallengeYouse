@@ -20,8 +20,7 @@ class PlacesConverter {
         
         jsonResults = json["results"] as! NSArray
         
-        for jsonPlaces in jsonResults
-        {
+        for jsonPlaces in jsonResults {
             do {
                 let places: Places = try unbox(dictionary: jsonPlaces as! UnboxableDictionary)
                 placesArray!.add(places)

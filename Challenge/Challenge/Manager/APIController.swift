@@ -25,15 +25,13 @@ class APIController {
             
             var statusCode = response.response?.statusCode
             
-            if let error = response.result.error as? AFError
-            {
+            if let error = response.result.error as? AFError {
                 statusCode = error._code
             }
             
             var placesArray: NSMutableArray? = NSMutableArray()
             
-            if let JSON = response.result.value
-            {
+            if let JSON = response.result.value {
                 let placesConverter: PlacesConverter? = PlacesConverter()
                 placesArray = placesConverter?.convertModel(json: JSON as! NSDictionary)
             }

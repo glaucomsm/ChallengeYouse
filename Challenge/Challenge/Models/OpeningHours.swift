@@ -17,8 +17,7 @@ class OpeningHours: Unboxable {
     
     //MARK: - Initialize
     
-    required init(unboxer: Unboxer)
-    {
+    required init(unboxer: Unboxer) {
         self.openNow = unboxer.unbox(key: "open_now")
     }
 }
