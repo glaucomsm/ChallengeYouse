@@ -14,7 +14,6 @@ class Places: Unboxable {
     // MARK: - Attributes
     
     var name: String?
-    var openingHours: OpeningHours?
     var icon: String?
     var vicinity: String?
     
@@ -22,7 +21,6 @@ class Places: Unboxable {
     
     required init(unboxer: Unboxer) {
         self.name = unboxer.unbox(key: "name")
-        self.openingHours = unboxer.unbox(key: "opening_hours")
         self.icon = unboxer.unbox(key: "icon")
         self.vicinity = unboxer.unbox(key: "vicinity")
     }

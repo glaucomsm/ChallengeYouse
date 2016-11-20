@@ -13,6 +13,7 @@
 		2AB1D8EA1DDE63E400FF5FE7 /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1D8E91DDE63E400FF5FE7 /* PlacesTableViewCell.swift */; };
 		2AD9605D1DDFBC5500B4A96C /* PlacesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9605C1DDFBC5500B4A96C /* PlacesDetailViewController.swift */; };
 		2AE52F5A1DE075430058A5DA /* place.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AE52F591DE075430058A5DA /* place.json */; };
+		2AEC49061DE268250058A6CA /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEC49051DE268250058A6CA /* Reachability.swift */; };
 		2AFA802D1DDD085400701A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA802C1DDD085400701A78 /* AppDelegate.swift */; };
 		2AFA80341DDD085400701A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AFA80331DDD085400701A78 /* Assets.xcassets */; };
 		2AFA80421DDD085400701A78 /* ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA80411DDD085400701A78 /* ChallengeTests.swift */; };
@@ -22,7 +23,6 @@
 		2AFA80611DDD132200701A78 /* GoogleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA80601DDD132200701A78 /* GoogleAPI.swift */; };
 		2AFA80641DDD169000701A78 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA80631DDD169000701A78 /* CustomImageView.swift */; };
 		2AFA80691DDD236B00701A78 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA80681DDD236B00701A78 /* Places.swift */; };
-		2AFA806B1DDD2D4C00701A78 /* OpeningHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA806A1DDD2D4C00701A78 /* OpeningHours.swift */; };
 		2AFA806D1DDDB73A00701A78 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA806C1DDDB73A00701A78 /* APIController.swift */; };
 		2AFA806F1DDDBC6800701A78 /* PlacesConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA806E1DDDBC6800701A78 /* PlacesConverter.swift */; };
 		6BADE8051B74EBE988D0346C /* Pods_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE83A8D9E49F9F75B8BEADCF /* Pods_Challenge.framework */; };
@@ -55,6 +55,7 @@
 		2AB1D8E91DDE63E400FF5FE7 /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesTableViewCell.swift; path = Cells/PlacesTableViewCell.swift; sourceTree = "<group>"; };
 		2AD9605C1DDFBC5500B4A96C /* PlacesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesDetailViewController.swift; path = Views/Main/PlacesDetailViewController.swift; sourceTree = "<group>"; };
 		2AE52F591DE075430058A5DA /* place.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = place.json; sourceTree = "<group>"; };
+		2AEC49051DE268250058A6CA /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Utils/Reachability.swift; sourceTree = "<group>"; };
 		2AFA80291DDD085400701A78 /* Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AFA802C1DDD085400701A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AFA80331DDD085400701A78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,7 +71,6 @@
 		2AFA80601DDD132200701A78 /* GoogleAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleAPI.swift; path = Manager/GoogleAPI.swift; sourceTree = "<group>"; };
 		2AFA80631DDD169000701A78 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomImageView.swift; path = Custom/CustomImageView.swift; sourceTree = "<group>"; };
 		2AFA80681DDD236B00701A78 /* Places.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Places.swift; path = Models/Places.swift; sourceTree = "<group>"; };
-		2AFA806A1DDD2D4C00701A78 /* OpeningHours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpeningHours.swift; path = Models/OpeningHours.swift; sourceTree = "<group>"; };
 		2AFA806C1DDDB73A00701A78 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIController.swift; path = Manager/APIController.swift; sourceTree = "<group>"; };
 		2AFA806E1DDDBC6800701A78 /* PlacesConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesConverter.swift; path = Models/PlacesConverter.swift; sourceTree = "<group>"; };
 		5ABF520B88A1DA2027AC1707 /* Pods-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge/Pods-Challenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				2AB1D8E01DDE614A00FF5FE7 /* NetworkUtils.swift */,
+				2AEC49051DE268250058A6CA /* Reachability.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -234,7 +235,6 @@
 			children = (
 				2AFA80681DDD236B00701A78 /* Places.swift */,
 				2AFA806E1DDDBC6800701A78 /* PlacesConverter.swift */,
-				2AFA806A1DDD2D4C00701A78 /* OpeningHours.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -552,7 +552,7 @@
 				2AFA80611DDD132200701A78 /* GoogleAPI.swift in Sources */,
 				2AFA806F1DDDBC6800701A78 /* PlacesConverter.swift in Sources */,
 				2AD9605D1DDFBC5500B4A96C /* PlacesDetailViewController.swift in Sources */,
-				2AFA806B1DDD2D4C00701A78 /* OpeningHours.swift in Sources */,
+				2AEC49061DE268250058A6CA /* Reachability.swift in Sources */,
 				2AFA80691DDD236B00701A78 /* Places.swift in Sources */,
 				2AB1D8EA1DDE63E400FF5FE7 /* PlacesTableViewCell.swift in Sources */,
 				2AB1D8E71DDE631300FF5FE7 /* PlacesTableViewController.swift in Sources */,

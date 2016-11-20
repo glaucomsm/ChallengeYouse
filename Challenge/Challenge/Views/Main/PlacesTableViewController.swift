@@ -36,6 +36,11 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
         
         self.tableView.tableFooterView = UIView()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        checkConnectivity()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -72,6 +77,21 @@ class PlacesTableViewController: UITableViewController, CLLocationManagerDelegat
                 let errorHelper = NetworkUtils()
                 SVProgressHUD.showError(withStatus: errorHelper.getErrorMessage(statusCode: statusCode!))
             }
+        }
+    }
+    
+    func checkConnectivity() {
+        if Reachability.isConnectedToNetwork() == false {
+            let alert = UIAlertController(title: "Alert", message: "Internet is not working", preferredStyle: UIAlertControllerStyle.alert)
+            self.present(alert, animated: false, completion: nil)
+            let okAction = UIAlertAction(title: "Retry", style: UIAlertActionStyle.default) {
+                UIAlertAction in
+                alert.dismiss(animated: false, completion: nil)
+                self.checkConnectivity()
+            }
+            alert.addAction(okAction)
+        }
+        else {
         }
     }
     

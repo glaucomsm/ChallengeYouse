@@ -140,24 +140,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j81-Bm-5sK">
-                                <rect key="frame" x="16" y="307" width="343" height="25"/>
+                                <rect key="frame" x="16" y="307" width="343" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="j81-Bm-5sK" secondAttribute="height" multiplier="343:25" id="eCb-I9-Val"/>
+                                    <constraint firstAttribute="width" secondItem="j81-Bm-5sK" secondAttribute="height" multiplier="343:60" id="RK3-Lk-fOP"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="j81-Bm-5sK" firstAttribute="trailing" secondItem="gTl-gY-5BW" secondAttribute="trailingMargin" id="2oG-sf-nKb"/>
-                            <constraint firstItem="j81-Bm-5sK" firstAttribute="leading" secondItem="gTl-gY-5BW" secondAttribute="leadingMargin" id="AgB-Q2-efF"/>
+                            <constraint firstItem="j81-Bm-5sK" firstAttribute="centerX" secondItem="gTl-gY-5BW" secondAttribute="centerX" id="Iha-Z9-Coe"/>
                             <constraint firstItem="ODv-Qb-o7x" firstAttribute="leading" secondItem="gTl-gY-5BW" secondAttribute="leadingMargin" id="OxG-w2-i08"/>
                             <constraint firstItem="ODv-Qb-o7x" firstAttribute="centerX" secondItem="gTl-gY-5BW" secondAttribute="centerX" id="P4Q-5m-o5z"/>
                             <constraint firstItem="ODv-Qb-o7x" firstAttribute="top" secondItem="KVV-QH-58X" secondAttribute="bottom" constant="30" id="Srs-tp-yFS"/>
-                            <constraint firstItem="j81-Bm-5sK" firstAttribute="centerX" secondItem="gTl-gY-5BW" secondAttribute="centerX" id="T9b-p9-Jgd"/>
-                            <constraint firstItem="j81-Bm-5sK" firstAttribute="top" secondItem="ODv-Qb-o7x" secondAttribute="bottom" constant="30" id="UDC-S8-UUe"/>
+                            <constraint firstItem="j81-Bm-5sK" firstAttribute="top" secondItem="ODv-Qb-o7x" secondAttribute="bottom" constant="30" id="bgW-iR-7jN"/>
+                            <constraint firstItem="j81-Bm-5sK" firstAttribute="trailing" secondItem="gTl-gY-5BW" secondAttribute="trailingMargin" id="fkt-6V-VyX"/>
+                            <constraint firstItem="j81-Bm-5sK" firstAttribute="leading" secondItem="gTl-gY-5BW" secondAttribute="leadingMargin" id="h8C-gB-vqX"/>
                             <constraint firstItem="KVV-QH-58X" firstAttribute="top" secondItem="1Vc-oD-NFP" secondAttribute="bottom" constant="8" id="pcN-u7-ZfM"/>
                             <constraint firstItem="ODv-Qb-o7x" firstAttribute="trailing" secondItem="gTl-gY-5BW" secondAttribute="trailingMargin" id="uG4-Dg-Ss8"/>
                             <constraint firstItem="KVV-QH-58X" firstAttribute="centerX" secondItem="gTl-gY-5BW" secondAttribute="centerX" id="uMa-MA-wh2"/>
