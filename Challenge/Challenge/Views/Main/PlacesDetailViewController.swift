@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Social
+import Accounts
 
 class PlacesDetailViewController: UIViewController {
     
@@ -48,4 +50,29 @@ class PlacesDetailViewController: UIViewController {
         let imageURL = URL(string: (places?.icon)!)
         self.placesImage.kf.setImage(with: imageURL)
     }
+    
+    //MARK: - IBAction
+    
+    @IBAction func facebook(_ sender: CustomButton) {
+        
+        let image: UIImage = UIImage(named: "logo.png")!
+        
+        let fbController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        fbController?.setInitialText("")
+        fbController?.add(image)
+        
+        let completionHandler = {(result:SLComposeViewControllerResult) -> () in
+            fbController?.dismiss(animated: true, completion:nil)
+            switch(result){
+            case SLComposeViewControllerResult.cancelled:
+                print("User canceled", terminator: "")
+            case SLComposeViewControllerResult.done:
+                print("User posted", terminator: "")
+            }
+        }
+        
+        fbController?.completionHandler = completionHandler
+        self.present(fbController!, animated: true, completion:nil)
+    }
+    
 }

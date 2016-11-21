@@ -148,13 +148,36 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snT-Va-EZT" customClass="CustomButton" customModule="Challenge" customModuleProvider="target">
+                                <rect key="frame" x="16" y="607" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.36862745099999999" green="0.16862745100000001" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="snT-Va-EZT" secondAttribute="height" multiplier="343:40" id="cQX-Gm-Iuz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                <state key="normal" title="SHARE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="facebook:" destination="eNw-IJ-6i8" eventType="touchUpInside" id="Qj3-hs-I8e"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="qq4-sv-JQm" firstAttribute="top" secondItem="snT-Va-EZT" secondAttribute="bottom" constant="20" id="Cnj-oH-Q6l"/>
+                            <constraint firstItem="snT-Va-EZT" firstAttribute="centerX" secondItem="gTl-gY-5BW" secondAttribute="centerX" id="D48-n6-DdI"/>
+                            <constraint firstItem="snT-Va-EZT" firstAttribute="leading" secondItem="gTl-gY-5BW" secondAttribute="leadingMargin" id="Eyd-n2-zAW"/>
                             <constraint firstItem="j81-Bm-5sK" firstAttribute="centerX" secondItem="gTl-gY-5BW" secondAttribute="centerX" id="Iha-Z9-Coe"/>
                             <constraint firstItem="ODv-Qb-o7x" firstAttribute="leading" secondItem="gTl-gY-5BW" secondAttribute="leadingMargin" id="OxG-w2-i08"/>
                             <constraint firstItem="ODv-Qb-o7x" firstAttribute="centerX" secondItem="gTl-gY-5BW" secondAttribute="centerX" id="P4Q-5m-o5z"/>
                             <constraint firstItem="ODv-Qb-o7x" firstAttribute="top" secondItem="KVV-QH-58X" secondAttribute="bottom" constant="30" id="Srs-tp-yFS"/>
+                            <constraint firstItem="snT-Va-EZT" firstAttribute="trailing" secondItem="gTl-gY-5BW" secondAttribute="trailingMargin" id="YU1-b9-o0S"/>
                             <constraint firstItem="j81-Bm-5sK" firstAttribute="top" secondItem="ODv-Qb-o7x" secondAttribute="bottom" constant="30" id="bgW-iR-7jN"/>
                             <constraint firstItem="j81-Bm-5sK" firstAttribute="trailing" secondItem="gTl-gY-5BW" secondAttribute="trailingMargin" id="fkt-6V-VyX"/>
                             <constraint firstItem="j81-Bm-5sK" firstAttribute="leading" secondItem="gTl-gY-5BW" secondAttribute="leadingMargin" id="h8C-gB-vqX"/>

@@ -14,6 +14,8 @@
 		2AD9605D1DDFBC5500B4A96C /* PlacesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD9605C1DDFBC5500B4A96C /* PlacesDetailViewController.swift */; };
 		2AE52F5A1DE075430058A5DA /* place.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AE52F591DE075430058A5DA /* place.json */; };
 		2AEC49061DE268250058A6CA /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEC49051DE268250058A6CA /* Reachability.swift */; };
+		2AEC49081DE26D590058A6CA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AEC49071DE26D590058A6CA /* Social.framework */; };
+		2AEC490A1DE26E850058A6CA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEC49091DE26E850058A6CA /* CustomButton.swift */; };
 		2AFA802D1DDD085400701A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA802C1DDD085400701A78 /* AppDelegate.swift */; };
 		2AFA80341DDD085400701A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AFA80331DDD085400701A78 /* Assets.xcassets */; };
 		2AFA80421DDD085400701A78 /* ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA80411DDD085400701A78 /* ChallengeTests.swift */; };
@@ -56,6 +58,8 @@
 		2AD9605C1DDFBC5500B4A96C /* PlacesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesDetailViewController.swift; path = Views/Main/PlacesDetailViewController.swift; sourceTree = "<group>"; };
 		2AE52F591DE075430058A5DA /* place.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = place.json; sourceTree = "<group>"; };
 		2AEC49051DE268250058A6CA /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Utils/Reachability.swift; sourceTree = "<group>"; };
+		2AEC49071DE26D590058A6CA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		2AEC49091DE26E850058A6CA /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomButton.swift; path = Custom/CustomButton.swift; sourceTree = "<group>"; };
 		2AFA80291DDD085400701A78 /* Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AFA802C1DDD085400701A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AFA80331DDD085400701A78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AEC49081DE26D590058A6CA /* Social.framework in Frameworks */,
 				2A6518751DDE785400858BE1 /* CoreLocation.framework in Frameworks */,
 				6BADE8051B74EBE988D0346C /* Pods_Challenge.framework in Frameworks */,
 			);
@@ -226,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				2AFA80631DDD169000701A78 /* CustomImageView.swift */,
+				2AEC49091DE26E850058A6CA /* CustomButton.swift */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -242,6 +248,7 @@
 		44983D2C8068680AB06435CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2AEC49071DE26D590058A6CA /* Social.framework */,
 				2A6518741DDE785400858BE1 /* CoreLocation.framework */,
 				FE83A8D9E49F9F75B8BEADCF /* Pods_Challenge.framework */,
 				5C50A6A9F2F2232DF65DD0E6 /* Pods_ChallengeTests.framework */,
@@ -553,6 +560,7 @@
 				2AFA806F1DDDBC6800701A78 /* PlacesConverter.swift in Sources */,
 				2AD9605D1DDFBC5500B4A96C /* PlacesDetailViewController.swift in Sources */,
 				2AEC49061DE268250058A6CA /* Reachability.swift in Sources */,
+				2AEC490A1DE26E850058A6CA /* CustomButton.swift in Sources */,
 				2AFA80691DDD236B00701A78 /* Places.swift in Sources */,
 				2AB1D8EA1DDE63E400FF5FE7 /* PlacesTableViewCell.swift in Sources */,
 				2AB1D8E71DDE631300FF5FE7 /* PlacesTableViewController.swift in Sources */,
